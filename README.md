@@ -1,33 +1,79 @@
-# electron-vue-ts
+# Electron Vue TypeScript Template
 
-This template should help get you started developing with Vue 3 in Vite.
+Este template serve como base para projetos que utilizam Electron, Vue 3 e TypeScript. Ele fornece uma estrutura inicial para desenvolver aplicações desktop modernas com uma interface web.
 
-## Recommended IDE Setup
+## **Requisitos**
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+*   Node.js (versão 14 ou superior)
+*   npm (geralmente incluído com o Node.js)
+*   [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (e desativar Vetur)
 
-## Type Support for `.vue` Imports in TS
+## **Configuração do Projeto**
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+### **Instalar Dependências**
 
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
+Para instalar as dependências do projeto, execute o seguinte comando no diretório raiz do projeto:
 
 ```
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+### **Executar em Ambiente de Desenvolvimento**
+
+Para compilar e executar a aplicação em modo de desenvolvimento com recarregamento automático, execute:
 
 ```
 npm run dev
 ```
 
-### Type-Check, Compile and Minify for Production
+### **Compilar e Minimizar para Produção**
+
+Para compilar e minimizar a aplicação para produção, execute:
 
 ```
 npm run build
 ```
+
+### **Construir o Pacote Electron**
+
+Para construir o pacote Electron para diferentes plataformas, você pode usar os seguintes comandos:
+
+*   Para todas as plataformas:
+
+```
+npm run electron:build
+```
+
+*   Para Windows:
+
+```
+npm run electron:build:win
+```
+
+*   Para Linux:
+
+```
+npm run electron:build:lin
+```
+
+*   Para macOS:
+
+```
+npm run electron:build:mac
+```
+
+## **Estrutura do Projeto**
+
+*   [`src`](src/): Contém os arquivos fonte do Vue.
+*   [`src_electron`](src_electron/): Contém os arquivos fonte do Electron.
+*   [`dist`](dist/): Diretório de saída para os arquivos compilados do Vue.
+*   [`dist-electron`](dist-electron/): Diretório de saída para os arquivos compilados do Electron.
+*   [`build`](build/): Contém os recursos de construção, como ícones.
+
+## **Personalizar Configuração**
+
+Veja a [Referência de Configuração do Vite](https://vite.dev/config/) para mais detalhes sobre como personalizar a configuração do Vite.
+
+## **Licença**
+
+© 2025 Valdir Barbosa. Todos os direitos reservados.
