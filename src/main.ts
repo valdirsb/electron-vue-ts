@@ -1,6 +1,12 @@
 import { createApp } from 'vue'
 import App from './App.vue'
+
 //route
 import router from './router'
 
-createApp(App).use(router).mount('#app')
+// Vuetify
+import 'vuetify/styles'
+import vuetifyConfig from './plugins/vuetify'
+
+
+createApp(App).use(vuetifyConfig).use(router).mount('#app')
