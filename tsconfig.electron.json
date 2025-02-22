@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "outDir": "dist-electron",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "target": "ESNext",
+    "strict": true,
+    "esModuleInterop": true
+  },
+  "include": ["src_electron/**/*"]
+}
